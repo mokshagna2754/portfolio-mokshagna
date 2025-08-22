@@ -3,6 +3,21 @@ import { Briefcase, MapPin, Calendar, TrendingUp, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      role: "UI/UX & App Development Intern",
+      company: "Centle",
+      duration: "May 2025 – Present",
+      location: "Remote/Hyderabad",
+      type: "Current Position",
+      achievements: [
+        "Developed Python algorithms for ride-sharing with ML-based demand prediction",
+        "Implemented route optimization using machine learning",
+        "Created mobile-first UI/UX designs for digital products",
+        "Collaborated on Flutter app development and web platforms"
+      ],
+      technologies: ["Python", "UI/UX Design", "Flutter", "ML Algorithms", "Figma", "Route Optimization"],
+      color: "primary"
+    },
+    {
       role: "AI/ML Virtual Intern",
       company: "AICTE – Google",
       duration: "Apr – Jun 2024",
@@ -15,7 +30,7 @@ const Experience = () => {
         "Implemented real-time AI solutions"
       ],
       technologies: ["Vertex AI", "TensorFlow", "Computer Vision", "Prompt Engineering", "Real-time Processing"],
-      color: "primary"
+      color: "accent"
     },
     {
       role: "AI/ML Virtual Intern",
@@ -25,12 +40,12 @@ const Experience = () => {
       type: "Internship",
       achievements: [
         "Achieved 92%+ image classification accuracy using CNNs",
-        "Deployed EC2 auto-scaling solutions",
-        "Optimized S3 storage for better performance",
-        "Gained expertise in AWS deployment and automation"
+        "Implemented EC2 auto-scaling and S3 optimization strategies",
+        "Enhanced system availability and performance",
+        "Gained proficiency in AWS automation and large-scale deployment"
       ],
       technologies: ["AWS EC2", "S3", "TensorFlow", "CNNs", "Auto-scaling", "Cloud Architecture"],
-      color: "accent"
+      color: "primary"
     }
   ];
 
@@ -145,11 +160,11 @@ const Experience = () => {
         {/* Experience Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-scale-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">6+</div>
+            <div className="text-3xl font-bold text-primary mb-2">8+</div>
             <div className="text-muted-foreground">Months of Experience</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-accent mb-2">2</div>
+            <div className="text-3xl font-bold text-accent mb-2">3</div>
             <div className="text-muted-foreground">Major Internships</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">

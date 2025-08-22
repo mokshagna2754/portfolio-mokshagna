@@ -39,6 +39,13 @@ const Contact = () => {
       color: "primary"
     },
     {
+      icon: <Phone size={20} />,
+      label: "Phone",
+      value: "+91-8008291411",
+      link: "tel:+918008291411",
+      color: "accent"
+    },
+    {
       icon: <Linkedin size={20} />,
       label: "LinkedIn",
       value: "Mokshagna Bingi",

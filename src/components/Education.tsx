@@ -6,7 +6,7 @@ const Education = () => {
       degree: "B.Tech – AI/ML",
       institution: "CMR College of Engineering and Technology",
       duration: "2021 – 2025",
-      grade: "CGPA: 7.80/10",
+      grade: "CGPA: 7.82/10",
       type: "undergraduate",
       description: "Specialized in Artificial Intelligence and Machine Learning with focus on deep learning, computer vision, and data analytics."
     },
@@ -122,7 +122,7 @@ const Education = () => {
               <div className="text-muted-foreground">Highest Score in Intermediate</div>
             </div>
             <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-              <div className="text-3xl font-bold text-accent mb-2">7.80</div>
+              <div className="text-3xl font-bold text-accent mb-2">7.82</div>
               <div className="text-muted-foreground">Current CGPA in B.Tech</div>
             </div>
             <div className="text-center p-6 card-elegant rounded-xl hover-scale">

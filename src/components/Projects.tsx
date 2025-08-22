@@ -8,12 +8,48 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Malpractice Detection in Exams",
+      category: "Computer Vision & AI",
+      description: "Advanced AI system analyzing exam hall footage and multi-modal data to detect cheating behaviors",
+      longDescription: "Our system analyzes exam hall footage and multi-modal data using advanced algorithms to detect cheating by identifying unauthorized objects and multiple persons. It adapts to evolving cheating tactics in real time while ensuring transparency, privacy, and ethical standards.",
+      icon: <Eye className="w-6 h-6" />,
+      technologies: ["Computer Vision", "Multi-modal AI", "Real-time Processing", "Object Detection", "Python", "Privacy Tech"],
+      achievements: [
+        "Real-time cheating detection system",
+        "Multi-modal data analysis capability",
+        "Unauthorized object identification",
+        "Privacy-preserving design with ethical standards"
+      ],
+      status: "Completed",
+      year: "2024",
+      color: "primary"
+    },
+    {
+      id: 2,
+      title: "Brain Stroke Detection System",
+      category: "Healthcare AI",
+      description: "ML-based diagnosis system using SVM, Decision Tree, AdaBoost, and Passive-Aggressive algorithms",
+      longDescription: "We proposed a machine learning-based diagnosis method for identifying brain stroke using four advanced algorithms: SVM, Decision Tree, AdaBooster, and Passive-Aggressive. Led a 5-member team to develop this comprehensive diagnostic system for early stroke detection.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["Python", "SVM", "Decision Trees", "AdaBoost", "Passive-Aggressive", "Medical AI"],
+      achievements: [
+        "Project Lead managing 5-member team",
+        "4 ML algorithms implementation (SVM, DT, AdaBoost, Passive-Aggressive)",
+        "Medical symptom-based stroke prediction",
+        "High accuracy diagnostic system"
+      ],
+      status: "Completed",
+      year: "2024",
+      color: "accent"
+    },
+    {
+      id: 3,
       title: "Effective Data Hiding Scheme Using ML",
       category: "Cybersecurity & ML",
       description: "Advanced LSB-based image steganography system with encryption for secure data hiding",
       longDescription: "Designed and implemented a sophisticated image steganography system that uses Least Significant Bit (LSB) manipulation combined with machine learning techniques for enhanced security. The system ensures imperceptible data hiding while maintaining image quality through advanced encryption methods.",
       icon: <Shield className="w-6 h-6" />,
-      technologies: ["Python", "OpenCV", "Machine Learning", "Cryptography", "Image Processing"],
+      technologies: ["Python", "OpenCV", "Machine Learning", "Cryptography", "Image Processing", "LSB Steganography"],
       achievements: [
         "Achieved PSNR ~30dB for quality assurance",
         "SSIM ~1 for structural similarity",
@@ -25,25 +61,7 @@ const Projects = () => {
       color: "primary"
     },
     {
-      id: 2,
-      title: "Brain Stroke Detection System",
-      category: "Healthcare AI",
-      description: "ML-powered diagnostic system for brain stroke detection from patient symptoms",
-      longDescription: "Led a 5-member team to develop a comprehensive machine learning system for early detection of brain strokes. The project involved evaluating multiple ML models to create an accurate diagnostic tool that can identify stroke risk based on patient symptoms and medical data.",
-      icon: <Brain className="w-6 h-6" />,
-      technologies: ["Python", "Scikit-learn", "Pandas", "Data Analysis", "Healthcare AI"],
-      achievements: [
-        "Project Lead managing 5-member team",
-        "Evaluated multiple ML models for accuracy",
-        "Real-time symptom analysis capability",
-        "Healthcare-focused AI implementation"
-      ],
-      status: "Completed",
-      year: "2024",
-      color: "accent"
-    },
-    {
-      id: 3,
+      id: 4,
       title: "Continuous Remote Alcohol Monitoring (CRAM)",
       category: "IoT & Monitoring",
       description: "Best Project Award winner - IoT-based system for continuous alcohol monitoring",
@@ -226,7 +244,7 @@ const Projects = () => {
         {/* Projects Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">3+</div>
+            <div className="text-3xl font-bold text-primary mb-2">4+</div>
             <div className="text-muted-foreground">Major Projects</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
