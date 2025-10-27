@@ -39,8 +39,9 @@ const Projects = () => {
         "High accuracy diagnostic system"
       ],
       status: "Completed",
-      year: "2024",
-      color: "accent"
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/brain-stroke-ml-project"
     },
     {
       id: 3,
@@ -57,8 +58,9 @@ const Projects = () => {
         "Advanced encryption implementation"
       ],
       status: "Completed",
-      year: "2024",
-      color: "primary"
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/Major_Project"
     },
     {
       id: 4,
@@ -77,6 +79,217 @@ const Projects = () => {
       status: "Award Winner",
       year: "2024",
       color: "accent"
+    },
+    {
+      id: 5,
+      title: "Vibe Order Dashboard",
+      category: "Full-Stack Development",
+      description: "Modern order management system built with TypeScript and advanced frontend technologies",
+      longDescription: "A comprehensive order management dashboard built with TypeScript for robust type safety and modern React patterns. Features include real-time order tracking, analytics, and intuitive user interface.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["TypeScript", "React", "Dashboard UI", "Order Management", "Modern Frontend"],
+      achievements: [
+        "Real-time order tracking system",
+        "Analytics and reporting features",
+        "Intuitive user interface",
+        "Type-safe implementation"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/vibe-order-dash",
+      images: [] // Add images here when you have screenshots, e.g., ["/vibe-order-dash.png"]
+    },
+    {
+      id: 6,
+      title: "Aura Calendar",
+      category: "UI/UX Design",
+      description: "Beautiful and functional calendar application with modern design principles",
+      longDescription: "A sophisticated calendar application featuring modern UI/UX design, built with TypeScript for type safety and maintainability. The application provides an elegant user experience with intuitive navigation and visual appeal.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["TypeScript", "React", "Calendar UI", "UX Design", "Modern Design"],
+      achievements: [
+        "Modern and intuitive calendar interface",
+        "Type-safe implementation",
+        "Excellent user experience",
+        "Beautiful design aesthetics"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/aura-calender",
+      images: ["/aura calender.png", "/aura calender1.png"]
+    },
+    {
+      id: 7,
+      title: "Inventory Optimization System",
+      category: "Data Science & AI",
+      description: "Python-based system for optimizing inventory management using machine learning",
+      longDescription: "An intelligent inventory optimization system leveraging Python and machine learning algorithms to optimize stock levels, reduce costs, and improve supply chain efficiency.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["Python", "Machine Learning", "Data Science", "Inventory Management", "Optimization"],
+      achievements: [
+        "Cost reduction through intelligent optimization",
+        "Predictive inventory management",
+        "Supply chain efficiency improvement",
+        "ML-driven decision making"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/inventory-optimization"
+    },
+    {
+      id: 8,
+      title: "Automation Tools",
+      category: "DevOps & Automation",
+      description: "JavaScript-based automation tools for streamlining development workflows",
+      longDescription: "Comprehensive automation tools built with JavaScript to streamline development workflows, improve productivity, and reduce manual tasks in software development processes.",
+      icon: <Shield className="w-6 h-6" />,
+      technologies: ["JavaScript", "Automation", "DevOps", "Workflow Optimization"],
+      achievements: [
+        "Development workflow automation",
+        "Productivity improvements",
+        "Reduced manual tasks",
+        "Efficient tool integration"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/automation"
+    },
+    {
+      id: 9,
+      title: "AI Assistant",
+      category: "AI & Chatbots",
+      description: "Intelligent AI assistant built with JavaScript and modern web technologies",
+      longDescription: "An advanced AI assistant application leveraging JavaScript and modern web technologies to provide intelligent, interactive user experiences with natural language processing capabilities.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["JavaScript", "AI", "Natural Language Processing", "Interactive UI"],
+      achievements: [
+        "Natural language understanding",
+        "Interactive AI assistant",
+        "Modern web technologies",
+        "User-friendly interface"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/assistant"
+    },
+    {
+      id: 10,
+      title: "Currency Converter",
+      category: "Web Development",
+      description: "Real-time currency conversion application with live exchange rates",
+      longDescription: "A web-based currency converter application providing real-time exchange rates and seamless currency conversion functionality for international transactions.",
+      icon: <ExternalLink className="w-6 h-6" />,
+      technologies: ["Web Development", "APIs", "Real-time Data", "Finance"],
+      achievements: [
+        "Real-time exchange rates",
+        "Multi-currency support",
+        "User-friendly interface",
+        "Accurate conversions"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/currency-convertor"
+    },
+    {
+      id: 11,
+      title: "Talk to GPT",
+      category: "AI & Machine Learning",
+      description: "Interactive chatbot application integrated with GPT for natural conversations",
+      longDescription: "A sophisticated chatbot application integrated with GPT technology to provide natural, intelligent conversations and assistance to users across various domains.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["JavaScript", "GPT Integration", "AI", "Chatbot", "NLP"],
+      achievements: [
+        "Natural conversation interface",
+        "GPT integration",
+        "Intelligent responses",
+        "Versatile applications"
+      ],
+      status: "Completed",
+      year: "2023",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/Talk_To_Gpt"
+    },
+    {
+      id: 12,
+      title: "Find My Tailor",
+      category: "Web Application",
+      description: "Platform connecting users with local tailors and fashion services",
+      longDescription: "A comprehensive web platform connecting users with local tailors and fashion services, featuring location-based search, booking capabilities, and service management.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["Web Development", "Location Services", "Service Management"],
+      achievements: [
+        "Location-based search",
+        "Service booking system",
+        "User-friendly platform",
+        "Local business integration"
+      ],
+      status: "Completed",
+      year: "2023",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/FindMyTailor"
+    },
+    {
+      id: 13,
+      title: "GoCar PWA",
+      category: "Progressive Web App",
+      description: "Progressive web app for automotive industry including car sales, rental, and services",
+      longDescription: "A comprehensive progressive web app for the automotive industry, featuring car sales, rentals, and service management. Built for hackathon with focus on dynamic functionality and user experience.",
+      icon: <Award className="w-6 h-6" />,
+      technologies: ["JavaScript", "PWA", "Automotive Industry", "Responsive Design"],
+      achievements: [
+        "Hackathon project participation",
+        "Multi-feature automotive platform",
+        "Progressive web app technology",
+        "Sales and rental management"
+      ],
+      status: "Completed",
+      year: "2023",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/GoCar-PWA"
+    },
+    {
+      id: 14,
+      title: "Balloon Insight",
+      category: "Data Analytics & Visualization",
+      description: "Advanced data insight and visualization platform built with TypeScript",
+      longDescription: "A sophisticated data insight platform that provides advanced analytics and visualization capabilities. Built with TypeScript for robust type safety and scalable architecture.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["TypeScript", "Data Analytics", "Visualization", "Advanced Analytics"],
+      achievements: [
+        "Advanced data visualization",
+        "Type-safe analytics implementation",
+        "Scalable architecture",
+        "Interactive insights platform"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/balloon-insight"
+    },
+    {
+      id: 15,
+      title: "Skin Gleam AI",
+      category: "Healthcare AI & Dermatology",
+      description: "AI-powered skincare analysis and recommendation system",
+      longDescription: "An intelligent skincare analysis platform using AI and machine learning to provide personalized skincare recommendations and skin condition analysis using advanced computer vision techniques.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["TypeScript", "AI", "Computer Vision", "Healthcare", "Machine Learning"],
+      achievements: [
+        "AI-powered skin analysis",
+        "Personalized recommendations",
+        "Advanced computer vision integration",
+        "Healthcare-focused AI implementation"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/skin-gleam-ai"
     }
   ];
 
@@ -100,6 +313,17 @@ const Projects = () => {
               className={`card-elegant rounded-xl overflow-hidden hover-lift group animate-scale-in`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
+              {/* Project Image */}
+              {project.images && project.images.length > 0 && (
+                <div className="relative w-full h-48 overflow-hidden">
+                  <img 
+                    src={project.images[0]} 
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              )}
+              
               {/* Project Header */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
@@ -166,6 +390,17 @@ const Projects = () => {
                     <Eye size={16} className="mr-2" />
                     View Details
                   </Button>
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center justify-center rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 text-sm font-medium transition-colors"
+                    >
+                      <Github size={16} />
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -211,6 +446,24 @@ const Projects = () => {
 
                 <p className="text-muted-foreground mb-6">{selectedProject.longDescription}</p>
 
+                {/* Project Images Gallery */}
+                {selectedProject.images && selectedProject.images.length > 0 && (
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-foreground mb-3">Project Screenshots</h4>
+                    <div className="grid grid-cols-1 gap-4">
+                      {selectedProject.images.map((imageUrl, imgIndex) => (
+                        <div key={imgIndex} className="rounded-lg overflow-hidden border border-border">
+                          <img 
+                            src={imageUrl} 
+                            alt={`${selectedProject.title} screenshot ${imgIndex + 1}`}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 <div className="mb-6">
                   <h4 className="font-semibold text-foreground mb-3">Key Achievements</h4>
                   <ul className="space-y-2">
@@ -236,6 +489,22 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
+
+                {/* GitHub Link */}
+                {selectedProject.githubUrl && (
+                  <div className="flex justify-end gap-2">
+                    <a 
+                      href={selectedProject.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center justify-center gap-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 text-sm font-medium transition-colors hover-scale"
+                    >
+                      <Github size={16} />
+                      View on GitHub
+                      <ExternalLink size={14} />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -244,8 +513,8 @@ const Projects = () => {
         {/* Projects Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">4+</div>
-            <div className="text-muted-foreground">Major Projects</div>
+            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-muted-foreground">Total Projects</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
             <div className="text-3xl font-bold text-accent mb-2">1</div>

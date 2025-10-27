@@ -18,7 +18,10 @@ const Skills = () => {
         { name: "Docker", level: 75, category: "DevOps" },
         { name: "React", level: 78, category: "Web Dev" },
         { name: "Flask/FastAPI", level: 82, category: "Backend" },
-        { name: "Flutter", level: 75, category: "Mobile Dev" }
+        { name: "Flutter", level: 75, category: "Mobile Dev" },
+        { name: "React Native", level: 72, category: "Mobile Dev" },
+        { name: "Android Studio", level: 70, category: "Mobile Dev" },
+        { name: "Firebase", level: 75, category: "Backend" }
       ]
     },
     data: {
@@ -36,7 +39,9 @@ const Skills = () => {
         { name: "VBA", level: 75, category: "Automation" },
         { name: "Matlab", level: 70, category: "Scientific Computing" },
         { name: "Scikit-learn", level: 85, category: "ML Libraries" },
-        { name: "Time-Series Analysis", level: 78, category: "Analytics" }
+        { name: "Time-Series Analysis", level: 78, category: "Analytics" },
+        { name: "Excel Analytics", level: 80, category: "Analytics" },
+        { name: "Expo", level: 75, category: "Mobile Dev" }
       ]
     },
     ai: {
@@ -50,7 +55,10 @@ const Skills = () => {
         { name: "Hugging Face", level: 82, category: "Models" },
         { name: "Prompt Engineering", level: 88, category: "LLM" },
         { name: "RAG", level: 75, category: "Retrieval" },
-        { name: "LLM Fine-tuning", level: 75, category: "Models" }
+        { name: "LLM Fine-tuning", level: 75, category: "Models" },
+        { name: "API Integration", level: 83, category: "Integration" },
+        { name: "Agentic AI", level: 80, category: "AI Systems" },
+        { name: "Autonomous Systems", level: 75, category: "AI Systems" }
       ]
     },
     cloud: {
@@ -66,7 +74,8 @@ const Skills = () => {
         { name: "REST APIs", level: 85, category: "Integration" },
         { name: "Streamlit", level: 82, category: "Deployment" },
         { name: "WordPress", level: 78, category: "CMS" },
-        { name: "POSIT", level: 72, category: "Analytics" }
+        { name: "POSIT", level: 72, category: "Analytics" },
+        { name: "HTML/CSS", level: 85, category: "Web Dev" }
       ]
     },
     soft: {
@@ -155,7 +164,7 @@ const Skills = () => {
         {/* Skills Summary */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate-scale-in">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">25+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">35+</div>
             <div className="text-muted-foreground">Technical Skills</div>
           </div>
           <div className="text-center">
@@ -163,7 +172,7 @@ const Skills = () => {
             <div className="text-muted-foreground">Programming Languages</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">20+</div>
             <div className="text-muted-foreground">Frameworks & Tools</div>
           </div>
           <div className="text-center">

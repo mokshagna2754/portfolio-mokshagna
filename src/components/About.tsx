@@ -1,4 +1,4 @@
-import { Brain, Code, History, Trophy } from 'lucide-react';
+import { Brain, Code, History, Trophy, Users } from 'lucide-react';
 
 const About = () => {
   const interests = [
@@ -95,11 +95,51 @@ const About = () => {
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-primary mb-2">2</div>
-            <div className="text-muted-foreground">Internships</div>
+            <div className="text-muted-foreground">Leadership Roles</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-accent mb-2">95%</div>
             <div className="text-muted-foreground">Accuracy Achieved</div>
+          </div>
+        </div>
+
+        {/* Positions of Responsibility */}
+        <div className="mt-16 animate-fade-in">
+          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Leadership & Responsibilities</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card-elegant p-6 rounded-xl hover-lift group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-6 h-6" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                    Student Coordinator – AIML Department
+                  </h4>
+                  <p className="font-semibold text-primary mb-2">Azura 2k24</p>
+                  <p className="text-muted-foreground text-sm">
+                    Led departmental coordination and organized technical events for 200+ teams during the tech fest, demonstrating strong organizational and leadership capabilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-elegant p-6 rounded-xl hover-lift group">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-accent/10 text-accent group-hover:scale-110 transition-transform duration-300">
+                  <Brain className="w-6 h-6" />
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors duration-300">
+                    Project Lead – Brain Stroke Detection
+                  </h4>
+                  <p className="font-semibold text-accent mb-2">Team of 5 Members</p>
+                  <p className="text-muted-foreground text-sm">
+                    Supervised 5-member team and ensured timely completion of model evaluation, leading from concept to implementation with successful healthcare AI deployment.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

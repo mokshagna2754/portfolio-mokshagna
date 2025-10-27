@@ -3,19 +3,34 @@ import { Briefcase, MapPin, Calendar, TrendingUp, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      role: "UI/UX & App Development Intern",
-      company: "Centle",
-      duration: "May 2025 – Present",
-      location: "Remote/Hyderabad",
+      role: "Founder's Office Intern",
+      company: "Flow Launch",
+      duration: "Sept – Oct 2025",
+      location: "Remote",
       type: "Current Position",
       achievements: [
-        "Developed Python algorithms for ride-sharing with ML-based demand prediction",
-        "Implemented route optimization using machine learning",
-        "Created mobile-first UI/UX designs for digital products",
-        "Collaborated on Flutter app development and web platforms"
+        "Designed and implemented automation workflows to optimize internal processes",
+        "Reduced manual effort through intelligent automation solutions",
+        "Strengthened skills in workflow automation and process optimization",
+        "Gained exposure to start-up operations, decision-making frameworks, and AI-driven business solutions"
+      ],
+      technologies: ["Automation", "Workflow Optimization", "AI Integration", "Process Improvement", "Start-up Operations"],
+      color: "primary"
+    },
+    {
+      role: "UI/UX & App Development Intern",
+      company: "Centle",
+      duration: "May – Sept 2025",
+      location: "Remote/Hyderabad",
+      type: "Internship",
+      achievements: [
+        "Developed and integrated Python-based ML models for ride-sharing application",
+        "Focused on demand prediction and route optimization using machine learning",
+        "Developed holistic skill set integrating backend AI/ML deployment with frontend UI/UX design",
+        "Mastered full-stack process from algorithm implementation to final user interface"
       ],
       technologies: ["Python", "UI/UX Design", "Flutter", "ML Algorithms", "Figma", "Route Optimization"],
-      color: "primary"
+      color: "accent"
     },
     {
       role: "AI/ML Virtual Intern",
@@ -160,11 +175,11 @@ const Experience = () => {
         {/* Experience Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-scale-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">8+</div>
+            <div className="text-3xl font-bold text-primary mb-2">12+</div>
             <div className="text-muted-foreground">Months of Experience</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-accent mb-2">3</div>
+            <div className="text-3xl font-bold text-accent mb-2">4</div>
             <div className="text-muted-foreground">Major Internships</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">

@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-secondary font-medium mb-12 animate-slide-up max-w-3xl mx-auto">
-            "Crafting intelligent solutions using code and creativity."
+            "Crafting intelligent solutions using code and creativity." {/* Updated portfolio with professional links */}
           </p>
 
           {/* Professional Links Grid */}
@@ -119,7 +119,7 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://learn.microsoft.com/en-us/users/mokshagna-bingi"
+                href="https://learn.microsoft.com/en-us/users/mokshagnabingi-7423/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-3 rounded-lg bg-muted hover:bg-muted/80 text-foreground hover-lift transition-all duration-300 group"
@@ -130,30 +130,31 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://cloud.google.com/community/experts/directory/experts/mokshagna-bingi"
+                href="https://www.cloudskillsboost.google/public_profiles/8b41f7a4-9e8e-41be-8ada-ba2f708006d1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-3 rounded-lg bg-muted hover:bg-muted/80 text-foreground hover-lift transition-all duration-300 group"
-                title="Google Cloud Profile"
+                title="Google Cloud Skills Boost Profile"
               >
                 <Cloud size={20} className="mr-2 group-hover:scale-110 transition-transform" />
                 <span className="text-sm font-medium">GCP</span>
               </a>
-            </div>
 
-            {/* Additional Professional Links */}
-            <div className="flex justify-center mt-4">
+              {/* Trailhead moved into grid for consistent styling */}
               <a
-                href="https://trailblazer.me/id/mokshagnabingi"
+                href="https://www.salesforce.com/trailblazer/h51a7328bingimokshagnabtechaim202125"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center p-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 hover-lift transition-all duration-300 group shadow-lg"
+                className="flex items-center justify-center p-3 rounded-lg bg-muted hover:bg-muted/80 text-foreground hover-lift transition-all duration-300 group"
                 title="Salesforce Trailblazer Profile"
               >
                 <Database size={20} className="mr-2 group-hover:scale-110 transition-transform" />
                 <span className="text-sm font-medium">Trailhead</span>
               </a>
             </div>
+
+            {/* Removed separate gradient Trailhead button for visual consistency */}
+
           </div>
 
           {/* CTA Button */}
