@@ -1,48 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ExternalLink, Github, Eye, Shield, Brain, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setSelectedProject(null);
+      }
+    };
+
+    if (selectedProject) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [selectedProject]);
+
   const projects = [
-    {
-      id: 1,
-      title: "Malpractice Detection in Exams",
-      category: "Computer Vision & AI",
-      description: "Advanced AI system analyzing exam hall footage and multi-modal data to detect cheating behaviors",
-      longDescription: "Our system analyzes exam hall footage and multi-modal data using advanced algorithms to detect cheating by identifying unauthorized objects and multiple persons. It adapts to evolving cheating tactics in real time while ensuring transparency, privacy, and ethical standards.",
-      icon: <Eye className="w-6 h-6" />,
-      technologies: ["Computer Vision", "Multi-modal AI", "Real-time Processing", "Object Detection", "Python", "Privacy Tech"],
-      achievements: [
-        "Real-time cheating detection system",
-        "Multi-modal data analysis capability",
-        "Unauthorized object identification",
-        "Privacy-preserving design with ethical standards"
-      ],
-      status: "Completed",
-      year: "2024",
-      color: "primary"
-    },
-    {
-      id: 2,
-      title: "Brain Stroke Detection System",
-      category: "Healthcare AI",
-      description: "ML-based diagnosis system using SVM, Decision Tree, AdaBoost, and Passive-Aggressive algorithms",
-      longDescription: "We proposed a machine learning-based diagnosis method for identifying brain stroke using four advanced algorithms: SVM, Decision Tree, AdaBooster, and Passive-Aggressive. Led a 5-member team to develop this comprehensive diagnostic system for early stroke detection.",
-      icon: <Brain className="w-6 h-6" />,
-      technologies: ["Python", "SVM", "Decision Trees", "AdaBoost", "Passive-Aggressive", "Medical AI"],
-      achievements: [
-        "Project Lead managing 5-member team",
-        "4 ML algorithms implementation (SVM, DT, AdaBoost, Passive-Aggressive)",
-        "Medical symptom-based stroke prediction",
-        "High accuracy diagnostic system"
-      ],
-      status: "Completed",
-      year: "2025",
-      color: "accent",
-      githubUrl: "https://github.com/mokshagna2754/brain-stroke-ml-project"
-    },
     {
       id: 3,
       title: "Effective Data Hiding Scheme Using ML",
@@ -62,24 +41,6 @@ const Projects = () => {
       color: "primary",
       githubUrl: "https://github.com/mokshagna2754/Major_Project",
       images: ["/data hiding1.png", "/data hiding2.png"]
-    },
-    {
-      id: 4,
-      title: "Continuous Remote Alcohol Monitoring (CRAM)",
-      category: "IoT & Monitoring",
-      description: "Best Project Award winner - IoT-based system for continuous alcohol monitoring",
-      longDescription: "Developed an innovative IoT-based system for continuous remote alcohol monitoring, combining hardware sensors with intelligent software algorithms. This project won the Best Project Award for its innovative approach to public safety and health monitoring.",
-      icon: <Award className="w-6 h-6" />,
-      technologies: ["IoT", "Sensors", "Real-time Monitoring", "Python", "Hardware Integration"],
-      achievements: [
-        "Best Project Award winner",
-        "Continuous monitoring capability",
-        "Real-time data transmission",
-        "Innovative IoT implementation"
-      ],
-      status: "Award Winner",
-      year: "2024",
-      color: "accent"
     },
     {
       id: 5,
@@ -120,6 +81,81 @@ const Projects = () => {
       color: "accent",
       githubUrl: "https://github.com/mokshagna2754/aura-calender",
       images: ["/aura calender.png", "/aura calender1.png"]
+    },
+    {
+      id: 15,
+      title: "Skin Gleam AI",
+      category: "Healthcare AI & Dermatology",
+      description: "AI-powered skincare analysis and recommendation system",
+      longDescription: "An intelligent skincare analysis platform using AI and machine learning to provide personalized skincare recommendations and skin condition analysis using advanced computer vision techniques.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["TypeScript", "AI", "Computer Vision", "Healthcare", "Machine Learning"],
+      achievements: [
+        "AI-powered skin analysis",
+        "Personalized recommendations",
+        "Advanced computer vision integration",
+        "Healthcare-focused AI implementation"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/skin-gleam-ai",
+      images: ["/derma lens1.jpeg", "/derma lens2.jpeg", "/derma lens3.jpeg"]
+    },
+    {
+      id: 1,
+      title: "Malpractice Detection in Exams",
+      category: "Computer Vision & AI",
+      description: "Advanced AI system analyzing exam hall footage and multi-modal data to detect cheating behaviors",
+      longDescription: "Our system analyzes exam hall footage and multi-modal data using advanced algorithms to detect cheating by identifying unauthorized objects and multiple persons. It adapts to evolving cheating tactics in real time while ensuring transparency, privacy, and ethical standards.",
+      icon: <Eye className="w-6 h-6" />,
+      technologies: ["Computer Vision", "Multi-modal AI", "Real-time Processing", "Object Detection", "Python", "Privacy Tech"],
+      achievements: [
+        "Real-time cheating detection system",
+        "Multi-modal data analysis capability",
+        "Unauthorized object identification",
+        "Privacy-preserving design with ethical standards"
+      ],
+      status: "Completed",
+      year: "2024",
+      color: "primary"
+    },
+    {
+      id: 2,
+      title: "Brain Stroke Detection System",
+      category: "Healthcare AI",
+      description: "ML-based diagnosis system using SVM, Decision Tree, AdaBoost, and Passive-Aggressive algorithms",
+      longDescription: "We proposed a machine learning-based diagnosis method for identifying brain stroke using four advanced algorithms: SVM, Decision Tree, AdaBooster, and Passive-Aggressive. Led a 5-member team to develop this comprehensive diagnostic system for early stroke detection.",
+      icon: <Brain className="w-6 h-6" />,
+      technologies: ["Python", "SVM", "Decision Trees", "AdaBoost", "Passive-Aggressive", "Medical AI"],
+      achievements: [
+        "Project Lead managing 5-member team",
+        "4 ML algorithms implementation (SVM, DT, AdaBoost, Passive-Aggressive)",
+        "Medical symptom-based stroke prediction",
+        "High accuracy diagnostic system"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/brain-stroke-ml-project"
+    },
+    {
+      id: 4,
+      title: "Continuous Remote Alcohol Monitoring (CRAM)",
+      category: "IoT & Monitoring",
+      description: "Best Project Award winner - IoT-based system for continuous alcohol monitoring",
+      longDescription: "Developed an innovative IoT-based system for continuous remote alcohol monitoring, combining hardware sensors with intelligent software algorithms. This project won the Best Project Award for its innovative approach to public safety and health monitoring.",
+      icon: <Award className="w-6 h-6" />,
+      technologies: ["IoT", "Sensors", "Real-time Monitoring", "Python", "Hardware Integration"],
+      achievements: [
+        "Best Project Award winner",
+        "Continuous monitoring capability",
+        "Real-time data transmission",
+        "Innovative IoT implementation"
+      ],
+      status: "Award Winner",
+      year: "2024",
+      color: "accent"
     },
     {
       id: 7,
@@ -216,26 +252,6 @@ const Projects = () => {
       color: "primary",
       githubUrl: "https://github.com/mokshagna2754/balloon-insight"
     },
-    {
-      id: 15,
-      title: "Skin Gleam AI",
-      category: "Healthcare AI & Dermatology",
-      description: "AI-powered skincare analysis and recommendation system",
-      longDescription: "An intelligent skincare analysis platform using AI and machine learning to provide personalized skincare recommendations and skin condition analysis using advanced computer vision techniques.",
-      icon: <Users className="w-6 h-6" />,
-      technologies: ["TypeScript", "AI", "Computer Vision", "Healthcare", "Machine Learning"],
-      achievements: [
-        "AI-powered skin analysis",
-        "Personalized recommendations",
-        "Advanced computer vision integration",
-        "Healthcare-focused AI implementation"
-      ],
-      status: "Completed",
-      year: "2025",
-      color: "accent",
-      githubUrl: "https://github.com/mokshagna2754/skin-gleam-ai",
-      images: ["/derma lens1.jpeg", "/derma lens2.jpeg", "/derma lens3.jpeg"]
-    }
   ];
 
   return (
@@ -255,8 +271,17 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`card-elegant rounded-xl overflow-hidden hover-lift group animate-scale-in`}
+              className={`card-elegant rounded-xl overflow-hidden hover-lift group animate-scale-in cursor-pointer`}
               style={{ animationDelay: `${index * 0.2}s` }}
+              onClick={() => setSelectedProject(project)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  setSelectedProject(project);
+                }
+              }}
             >
               {/* Project Image */}
               {project.images && project.images.length > 0 && (
