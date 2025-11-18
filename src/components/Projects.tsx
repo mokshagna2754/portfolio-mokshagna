@@ -154,7 +154,7 @@ const Projects = () => {
         "Reduced manual tasks",
         "Efficient tool integration"
       ],
-      status: "Completed",
+      status: "In Progress",
       year: "2025",
       color: "accent",
       githubUrl: "https://github.com/mokshagna2754/automation"
@@ -173,7 +173,7 @@ const Projects = () => {
         "Modern web technologies",
         "User-friendly interface"
       ],
-      status: "Completed",
+      status: "In Progress",
       year: "2025",
       color: "primary",
       githubUrl: "https://github.com/mokshagna2754/assistant"
@@ -198,63 +198,6 @@ const Projects = () => {
       githubUrl: "https://github.com/mokshagna2754/currency-convertor"
     },
     {
-      id: 11,
-      title: "Talk to GPT",
-      category: "AI & Machine Learning",
-      description: "Interactive chatbot application integrated with GPT for natural conversations",
-      longDescription: "A sophisticated chatbot application integrated with GPT technology to provide natural, intelligent conversations and assistance to users across various domains.",
-      icon: <Brain className="w-6 h-6" />,
-      technologies: ["JavaScript", "GPT Integration", "AI", "Chatbot", "NLP"],
-      achievements: [
-        "Natural conversation interface",
-        "GPT integration",
-        "Intelligent responses",
-        "Versatile applications"
-      ],
-      status: "Completed",
-      year: "2023",
-      color: "primary",
-      githubUrl: "https://github.com/mokshagna2754/Talk_To_Gpt"
-    },
-    {
-      id: 12,
-      title: "Find My Tailor",
-      category: "Web Application",
-      description: "Platform connecting users with local tailors and fashion services",
-      longDescription: "A comprehensive web platform connecting users with local tailors and fashion services, featuring location-based search, booking capabilities, and service management.",
-      icon: <Users className="w-6 h-6" />,
-      technologies: ["Web Development", "Location Services", "Service Management"],
-      achievements: [
-        "Location-based search",
-        "Service booking system",
-        "User-friendly platform",
-        "Local business integration"
-      ],
-      status: "Completed",
-      year: "2023",
-      color: "accent",
-      githubUrl: "https://github.com/mokshagna2754/FindMyTailor"
-    },
-    {
-      id: 13,
-      title: "GoCar PWA",
-      category: "Progressive Web App",
-      description: "Progressive web app for automotive industry including car sales, rental, and services",
-      longDescription: "A comprehensive progressive web app for the automotive industry, featuring car sales, rentals, and service management. Built for hackathon with focus on dynamic functionality and user experience.",
-      icon: <Award className="w-6 h-6" />,
-      technologies: ["JavaScript", "PWA", "Automotive Industry", "Responsive Design"],
-      achievements: [
-        "Hackathon project participation",
-        "Multi-feature automotive platform",
-        "Progressive web app technology",
-        "Sales and rental management"
-      ],
-      status: "Completed",
-      year: "2023",
-      color: "primary",
-      githubUrl: "https://github.com/mokshagna2754/GoCar-PWA"
-    },
-    {
       id: 14,
       title: "Balloon Insight",
       category: "Data Analytics & Visualization",
@@ -268,7 +211,7 @@ const Projects = () => {
         "Scalable architecture",
         "Interactive insights platform"
       ],
-      status: "Completed",
+      status: "In Progress",
       year: "2025",
       color: "primary",
       githubUrl: "https://github.com/mokshagna2754/balloon-insight"
@@ -515,7 +458,7 @@ const Projects = () => {
         {/* Projects Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-3xl font-bold text-primary mb-2">12+</div>
             <div className="text-muted-foreground">Total Projects</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
