@@ -37,11 +37,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-slide-in-left">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
+            <h3 className="text-2xl md:text-3xl font-semibold font-poppins mb-6 text-foreground">
               Driven by <span className="text-gradient">Innovation</span> and <span className="text-gradient">Creativity</span>
             </h3>
             
-            <div className="space-y-4 text-muted-foreground text-lg">
+            <div className="space-y-4 text-muted-foreground text-lg font-inter">
               <p>
                 As a passionate AI/ML developer and data analyst, I'm on a mission to solve real-world problems 
                 through intelligent automation and innovative technology solutions. My journey in artificial 
@@ -86,7 +86,7 @@ const About = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate-scale-in">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">30+</div>
             <div className="text-muted-foreground">Projects Completed</div>
           </div>
           <div className="text-center">
@@ -105,7 +105,7 @@ const About = () => {
 
         {/* Positions of Responsibility */}
         <div className="mt-16 animate-fade-in">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Leadership & Responsibilities</h3>
+          <h3 className="text-2xl font-bold font-poppins text-center mb-8 text-foreground">Leadership & Responsibilities</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card-elegant p-6 rounded-xl hover-lift group">
               <div className="flex items-start gap-4">

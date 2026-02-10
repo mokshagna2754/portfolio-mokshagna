@@ -31,9 +31,9 @@ const Certifications = () => {
       icon: "🎯"
     },
     {
-      category: "Salesforce Trailblazer",
-      count: "73 Badges, 7 Superbadges",
-      specializations: ["Agentic AI", "Prompt Engineering", "CRM Solutions"],
+      category: "Salesforce Trailhead",
+      count: "87 Badges · 62,800 Points · 13 Trails",
+      specializations: ["Expeditioner Rank", "Agentblazer Innovator '26", "Agentforce & Agentic AI"],
       color: "accent",
       icon: "🚀"
     },
@@ -153,20 +153,20 @@ const Certifications = () => {
         {/* Certification Statistics */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate-scale-in">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">120+</div>
-            <div className="text-muted-foreground">Total Badges</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">87</div>
+            <div className="text-muted-foreground">Trailhead Badges</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">15+</div>
-            <div className="text-muted-foreground">Certifications</div>
+            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">62,800</div>
+            <div className="text-muted-foreground">Trailhead Points</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-primary mb-2">2</div>
             <div className="text-muted-foreground">Major Awards</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">4+</div>
-            <div className="text-muted-foreground">Platforms</div>
+            <div className="text-3xl md:text-4xl font-bold text-accent mb-2">13</div>
+            <div className="text-muted-foreground">Trails Completed</div>
           </div>
         </div>
 
@@ -176,14 +176,14 @@ const Certifications = () => {
             <h3 className="text-2xl font-bold text-foreground mb-4">Continuous Learning Journey</h3>
             <p className="text-muted-foreground mb-6">
               Always exploring new technologies and earning certifications to stay at the forefront of AI/ML innovation. 
-              Currently working towards advanced cloud certifications and specialized AI credentials.
+              Trailhead rank: Expeditioner. Agentblazer Innovator ’26. Earn 13 more badges to reach Ranger rank.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                Next: AWS Solutions Architect
+                Next: Ranger rank (13 badges to go)
               </span>
               <span className="px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium">
-                Learning: Advanced MLOps
+                Agentblazer Innovator ’26
               </span>
             </div>
           </div>

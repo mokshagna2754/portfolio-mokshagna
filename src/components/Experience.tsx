@@ -3,11 +3,26 @@ import { Briefcase, MapPin, Calendar, TrendingUp, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      role: "AI Intern",
+      company: "SimplyBiz Pvt Ltd",
+      duration: "Nov 2025 – Present",
+      location: "Remote",
+      type: "Current Position",
+      achievements: [
+        "Built SimplyTrnsct, a legal SaaS platform for managing contracts, deals, and business workflows",
+        "Contributed to product planning, workflow structuring, automation, and coordination between business and technical teams",
+        "Learned end-to-end application design and SaaS product development, from requirement analysis to deployment planning",
+        "Gained practical experience in Gen AI, prompting, and startup execution in a real-world environment"
+      ],
+      technologies: ["SaaS", "Automation", "Gen AI", "Prompting", "Web Stack", "End-to-End Application Design", "Product Planning", "Workflow Design"],
+      color: "primary"
+    },
+    {
       role: "Founder's Office Intern",
       company: "Flow Launch",
       duration: "Sept – Oct 2025",
       location: "Remote",
-      type: "Current Position",
+      type: "Internship",
       achievements: [
         "Designed and implemented automation workflows to optimize internal processes",
         "Reduced manual effort through intelligent automation solutions",
@@ -179,7 +194,7 @@ const Experience = () => {
             <div className="text-muted-foreground">Months of Experience</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-accent mb-2">4</div>
+            <div className="text-3xl font-bold text-accent mb-2">5</div>
             <div className="text-muted-foreground">Major Internships</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">

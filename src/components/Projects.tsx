@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ExternalLink, Github, Eye, Shield, Brain, Users, Award } from 'lucide-react';
+import { ExternalLink, Github, Eye, Shield, Brain, Users, Award, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
@@ -22,6 +22,47 @@ const Projects = () => {
   }, [selectedProject]);
 
   const projects = [
+    {
+      id: 16,
+      title: "Bikemate",
+      category: "Mobile Development",
+      description: "Mobile application for cyclists — ride tracking, bike maintenance, and cycling community features",
+      longDescription: "Bikemate is a mobile application designed for cyclists, offering ride tracking, bike maintenance reminders, route planning, and community features. Built for iOS and Android to help riders stay on top of their bikes and connect with other cyclists.",
+      icon: <Smartphone className="w-6 h-6" />,
+      technologies: ["React Native", "Mobile Development", "Ride Tracking", "Bike Maintenance", "Cross-Platform"],
+      achievements: [
+        "Cross-platform mobile app (iOS & Android)",
+        "Ride tracking and route features",
+        "Bike maintenance reminders",
+        "Cycling community integration"
+      ],
+      status: "In Progress",
+      year: "2025",
+      color: "primary",
+      githubUrl: "https://github.com/mokshagna2754/bikemate",
+      demoMediaUrl: "https://drive.google.com/drive/folders/11GY6fGIDLdNohFm-pjfuJI9PcLQz3Gmm?usp=drive_link",
+      images: ["/bikemate splash.png", "/bikemate.png", "/bikemate (1).png", "/bikemate (2).png", "/bikemate (3).png"]
+    },
+    {
+      id: 17,
+      title: "Cook Pilot",
+      category: "Full-Stack Development",
+      description: "Recipe and cooking companion app with meal planning and step-by-step guidance",
+      longDescription: "A modern recipe and cooking companion built with TypeScript, helping users discover recipes, plan meals, and follow step-by-step cooking guidance. Deployed with a polished, responsive interface for home cooks.",
+      icon: <Users className="w-6 h-6" />,
+      technologies: ["TypeScript", "React", "Recipe App", "Meal Planning", "Vercel"],
+      achievements: [
+        "Recipe discovery and meal planning",
+        "Step-by-step cooking guidance",
+        "Modern responsive interface",
+        "Deployed on Vercel"
+      ],
+      status: "Completed",
+      year: "2025",
+      color: "accent",
+      githubUrl: "https://github.com/mokshagna2754/cook-pilot",
+      images: ["/cook pilot splash.png", "/cook pilot.png", "/cook pilot 2.png", "/cook pilot 3.png", "/cook pilot 4.png"]
+    },
     {
       id: 3,
       title: "Effective Data Hiding Scheme Using ML",
@@ -271,7 +312,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`card-elegant rounded-xl overflow-hidden hover-lift group animate-scale-in cursor-pointer`}
+              className={`card-elegant rounded-xl overflow-hidden hover-lift group animate-scale-in cursor-pointer focus:outline-none`}
               style={{ animationDelay: `${index * 0.2}s` }}
               onClick={() => setSelectedProject(project)}
               role="button"
@@ -420,13 +461,13 @@ const Projects = () => {
                 {selectedProject.images && selectedProject.images.length > 0 && (
                   <div className="mb-6">
                     <h4 className="font-semibold text-foreground mb-3">Project Screenshots</h4>
-                    <div className="grid grid-cols-1 gap-4">
+                    <div className={`grid grid-cols-1 gap-4 ${selectedProject.title === "Bikemate" || selectedProject.title === "Cook Pilot" ? "max-w-xs mx-auto" : ""}`}>
                       {selectedProject.images.map((imageUrl, imgIndex) => (
                         <div key={imgIndex} className="rounded-lg overflow-hidden border border-border">
                           <img 
                             src={imageUrl} 
                             alt={`${selectedProject.title} screenshot ${imgIndex + 1}`}
-                            className="w-full h-auto object-contain"
+                            className={`w-full h-auto object-contain ${selectedProject.title === "Bikemate" || selectedProject.title === "Cook Pilot" ? "max-h-[240px]" : ""}`}
                           />
                         </div>
                       ))}
@@ -460,19 +501,33 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* GitHub Link */}
-                {selectedProject.githubUrl && (
-                  <div className="flex justify-end gap-2">
-                    <a 
-                      href={selectedProject.githubUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="inline-flex items-center justify-center gap-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 text-sm font-medium transition-colors hover-scale"
-                    >
-                      <Github size={16} />
-                      View on GitHub
-                      <ExternalLink size={14} />
-                    </a>
+                {/* GitHub & Demo links */}
+                {(selectedProject.githubUrl || selectedProject.demoMediaUrl) && (
+                  <div className="flex flex-wrap justify-end gap-2">
+                    {selectedProject.demoMediaUrl && (
+                      <a
+                        href={selectedProject.demoMediaUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 text-sm font-medium transition-colors hover-scale"
+                      >
+                        <ExternalLink size={16} />
+                        Demo &amp; media
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
+                    {selectedProject.githubUrl && (
+                      <a 
+                        href={selectedProject.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center gap-2 rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-4 text-sm font-medium transition-colors hover-scale"
+                      >
+                        <Github size={16} />
+                        View on GitHub
+                        <ExternalLink size={14} />
+                      </a>
+                    )}
                   </div>
                 )}
               </div>
@@ -483,8 +538,8 @@ const Projects = () => {
         {/* Projects Summary */}
         <div className="mt-16 grid md:grid-cols-3 gap-8 animate-fade-in">
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
-            <div className="text-3xl font-bold text-primary mb-2">12+</div>
-            <div className="text-muted-foreground">Total Projects</div>
+<div className="text-3xl font-bold text-primary mb-2">30+</div>
+          <div className="text-muted-foreground">Total Projects</div>
           </div>
           <div className="text-center p-6 card-elegant rounded-xl hover-scale">
             <div className="text-3xl font-bold text-accent mb-2">1</div>

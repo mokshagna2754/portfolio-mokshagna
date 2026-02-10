@@ -68,9 +68,9 @@ const Contact = () => {
       description: "38 Badges, 7 Trophies in Azure AI & Data"
     },
     {
-      name: "Salesforce Trailblazer",
+      name: "Salesforce Trailhead",
       url: "https://trailblazer.me/mokshagna",
-      description: "73 Badges, 7 Superbadges in AI & CRM"
+      description: "87 Badges, 62,800 Points, 13 Trails · Expeditioner · Agentblazer Innovator '26"
     },
     {
       name: "Linktree Profile",
