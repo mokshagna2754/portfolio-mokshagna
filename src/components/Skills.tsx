@@ -97,25 +97,25 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding">
       <div className="container-custom">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold font-poppins mb-4 text-gradient">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-xl md:text-2xl font-bold font-poppins mb-3 text-gradient">
             Skills & Expertise
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <div className="w-20 h-0.5 bg-primary mx-auto rounded-full"></div>
+          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto text-sm">
             A comprehensive toolkit for building intelligent, scalable solutions
           </p>
         </div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-up">
+        <div className="flex flex-wrap justify-center gap-2 mb-4 animate-slide-up">
           {Object.entries(skillCategories).map(([key, category]) => (
             <button
               key={key}
               onClick={() => setActiveCategory(key)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`flex items-center gap-1 [&_svg]:w-3.5 [&_svg]:h-3.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
                 activeCategory === key
-                  ? 'bg-primary text-primary-foreground shadow-lg scale-105'
+                  ? 'bg-primary text-primary-foreground shadow-md'
                   : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary'
               }`}
             >
@@ -127,27 +127,27 @@ const Skills = () => {
 
         {/* Skills Grid */}
         <div className="animate-fade-in">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+          <h3 className="text-base font-bold text-center mb-4 text-foreground">
             {skillCategories[activeCategory].title}
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             {skillCategories[activeCategory].skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="card-elegant p-6 rounded-xl hover-lift animate-slide-up"
+                className="card-elegant p-4 rounded-lg hover-lift animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="flex justify-between items-center mb-3">
+                <div className="flex justify-between items-center mb-1">
                   <div>
-                    <h4 className="font-semibold text-foreground">{skill.name}</h4>
-                    <p className="text-sm text-muted-foreground">{skill.category}</p>
+                    <p className="text-xs font-medium text-foreground">{skill.name}</p>
+                    <p className="text-[10px] text-muted-foreground">{skill.category}</p>
                   </div>
-                  <span className="font-bold text-primary">{skill.level}%</span>
+                  <span className="text-xs font-bold text-primary">{skill.level}%</span>
                 </div>
                 
                 {/* Skill Progress Bar */}
-                <div className="skill-bar h-3">
+                <div className="skill-bar h-1.5">
                   <div
                     className="skill-progress h-full rounded-full"
                     style={{
