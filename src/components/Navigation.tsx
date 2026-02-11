@@ -46,10 +46,16 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="font-poppins font-bold text-xl text-primary">
-            MB
-          </div>
+          {/* Logo - creative MB matching hero */}
+          <button
+            onClick={() => scrollToSection('hero')}
+            className="group focus:outline-none rounded-full focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            aria-label="Home"
+          >
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary via-primary to-accent flex items-center justify-center text-white text-sm font-bold font-poppins shadow-md shadow-primary/30 group-hover:shadow-xl group-hover:shadow-primary/40 group-hover:scale-105 transition-all duration-300 ring-2 ring-white/20">
+              MB
+            </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

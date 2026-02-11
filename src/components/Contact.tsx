@@ -64,17 +64,17 @@ const Contact = () => {
   const additionalLinks = [
     {
       name: "Microsoft Learn Profile",
-      url: "https://learn.microsoft.com/users/mokshagna",
+      url: "https://learn.microsoft.com/en-us/users/mokshagnabingi-7423/",
       description: "38 Badges, 7 Trophies in Azure AI & Data"
     },
     {
       name: "Salesforce Trailhead",
-      url: "https://trailblazer.me/mokshagna",
+      url: "https://www.salesforce.com/trailblazer/h51a7328bingimokshagnabtechaim202125",
       description: "87 Badges, 62,800 Points, 13 Trails · Expeditioner · Agentblazer Innovator '26"
     },
     {
       name: "Linktree Profile",
-      url: "https://linktr.ee/mokshagna",
+      url: "https://linktr.ee/mokshagnabing",
       description: "All social links and portfolio"
     }
   ];

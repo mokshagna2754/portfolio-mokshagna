@@ -28,28 +28,56 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 hero-gradient opacity-5"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,hsl(var(--primary))_0%,transparent_50%)] opacity-10"></div>
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      {/* Animated moving gradient layer */}
+      <div 
+        className="absolute inset-0 opacity-80"
+        style={{ 
+          background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(249, 115, 22, 0.15) 50%, rgba(139, 92, 246, 0.2) 100%)',
+          backgroundSize: '200% 200%',
+          animation: 'gradient-shift 12s ease infinite'
+        }} 
+      />
+      {/* Floating orbs - visible purple & orange */}
+      <div 
+        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full blur-3xl pointer-events-none opacity-70"
+        style={{ 
+          background: 'radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, rgba(249, 115, 22, 0.2) 70%, transparent 100%)',
+          animation: 'float-1 18s ease-in-out infinite'
+        }} 
+      />
+      <div 
+        className="absolute bottom-1/3 right-1/4 w-[450px] h-[450px] rounded-full blur-3xl pointer-events-none opacity-60"
+        style={{ 
+          background: 'radial-gradient(circle, rgba(249, 115, 22, 0.35) 0%, rgba(139, 92, 246, 0.25) 70%, transparent 100%)',
+          animation: 'float-2 22s ease-in-out infinite'
+        }} 
+      />
+      <div 
+        className="absolute top-1/2 left-1/2 w-[400px] h-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl pointer-events-none opacity-50"
+        style={{ 
+          background: 'radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%)',
+          animation: 'float-3 15s ease-in-out infinite'
+        }} 
+      />
       
       <div className="container-custom relative z-10">
-        <div className="text-center animate-fade-in">
-          {/* Profile Image Placeholder */}
-          <div className="mb-8 animate-scale-in">
+        <div className="text-center">
+          {/* Profile Image - animates in first */}
+          <div className="mb-8 opacity-0" style={{ animation: 'scale-in 0.7s ease-out 0.1s forwards' }}>
             <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white text-4xl md:text-5xl font-bold shadow-2xl animate-pulse-glow">
               MB
             </div>
           </div>
 
-          {/* Name */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 animate-slide-up">
+          {/* Name - slides up after avatar */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-poppins mb-4 opacity-0" style={{ animation: 'slide-up 0.8s ease-out 0.4s forwards' }}>
             <span className="text-gradient">Mokshagna</span>{' '}
             <span className="text-foreground">Bingi</span>
           </h1>
 
           {/* Animated Title */}
-          <div className="h-16 md:h-20 flex items-center justify-center mb-6">
+          <div className="h-16 md:h-20 flex items-center justify-center mb-6 opacity-0" style={{ animation: 'fade-in 0.6s ease-out 0.7s forwards' }}>
             <p className="text-lg md:text-2xl text-muted-foreground font-medium min-h-[2rem]">
               {text}
               <span className="animate-pulse">|</span>
@@ -57,12 +85,12 @@ const Hero = () => {
           </div>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-secondary font-medium mb-12 animate-slide-up max-w-3xl mx-auto">
-            "Crafting intelligent solutions using code and creativity." {/* Updated portfolio with professional links */}
+          <p className="text-xl md:text-2xl text-secondary font-medium mb-12 max-w-3xl mx-auto opacity-0" style={{ animation: 'slide-up 0.7s ease-out 1s forwards' }}>
+            "Crafting intelligent solutions using code and creativity."
           </p>
 
           {/* Professional Links Grid */}
-          <div className="mb-12 animate-slide-up">
+          <div className="mb-12 opacity-0" style={{ animation: 'slide-up 0.7s ease-out 1.3s forwards' }}>
             <h3 className="text-lg font-semibold text-muted-foreground mb-6">Connect & Explore</h3>
             
             {/* Primary Social Links */}
@@ -158,7 +186,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="animate-scale-in">
+          <div className="opacity-0" style={{ animation: 'scale-in 0.6s ease-out 1.6s forwards' }}>
             <Button
               onClick={() => scrollToSection('projects')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold rounded-full hover-scale shadow-lg hover:shadow-xl transition-all duration-300"
